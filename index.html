@@ -1,0 +1,106 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.css">
+
+    <title> </title>
+  </head>
+  <body>
+
+
+    <style>
+    body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .slide {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: url(bg.png) 80%;
+      background-size: 70%;
+      background-repeat: no-repeat;
+    } 
+    .slide__image img {
+      width: 100%;
+    }
+  </style>
+
+  <section class="slide">
+    <div id="owl-5" class="owl-carousel owl-theme" id="ticker">
+      <div class="item">
+        <div class="slide__image">
+          <img src="image1.png" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="slide__image">
+          <img src="image2.png" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="slide__image">
+          <img src="image3.png" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="slide__image">
+          <img src="image4.png" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="slide__image">
+          <img src="image5.png" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="slide__image">
+          <img src="image6.png" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="slide__image">
+          <img src="image7.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
+
+
+  <script>
+    $('#owl-5').owlCarousel({
+      loop:true,
+      nav:false,
+      dotsEach:false,
+      dots:false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      smartSpeed: 4000,
+      slideTransition: 'linear',
+      margin:15,
+      responsive:{
+        0:{
+          items:7
+        },
+        600:{
+          items:2
+        },
+        1000:{
+          items:7
+        }
+      }
+    })
+  </script>
+
+
+</body>
+</html>
